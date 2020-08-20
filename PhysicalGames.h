@@ -11,11 +11,11 @@
 
 using namespace std;
 
-class PhysicalGame : public Game {
+class PhysicalGames : public Game {
 public:
-    PhysicalGame();
+    PhysicalGames();
 
-    PhysicalGame(string name, double price, double tax, double itemWeight, string productDimensions);
+    PhysicalGames(string name, double price, double tax, double itemWeight, string productDimensions);
 
     double getItemWeight() const;
 

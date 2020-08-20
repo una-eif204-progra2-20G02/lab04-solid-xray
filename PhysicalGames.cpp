@@ -1,33 +1,34 @@
 //
 // Created by OEM on 20/08/2020.
 //
+#include <iomanip>
 #include "PhysicalGames.h"
 
-PhysicalGame::PhysicalGame() {}
+PhysicalGames::PhysicalGames() {}
 
-PhysicalGame::PhysicalGame(string name, double price, double tax, double itemWeight, string productDimensions)
+PhysicalGames::PhysicalGames(string name, double price, double tax, double itemWeight, string productDimensions)
 : Game(name, price, tax) {
     this->itemWeight = itemWeight;
     this->productDimensions = productDimensions;
 }
 
-double PhysicalGame::getItemWeight() const {
+double PhysicalGames::getItemWeight() const {
     return itemWeight;
 }
 
-void PhysicalGame::setItemWeight(double itemWeight) {
-    PhysicalGame::itemWeight = itemWeight;
+void PhysicalGames::setItemWeight(double itemWeight) {
+    PhysicalGames::itemWeight = itemWeight;
 }
 
-string PhysicalGame::getProductDimensions() const {
+string PhysicalGames::getProductDimensions() const {
     return productDimensions;
 }
 
-void PhysicalGame::setProductDimensions(string productDimensions) {
-    PhysicalGame::productDimensions = productDimensions;
+void PhysicalGames::setProductDimensions(string productDimensions) {
+    PhysicalGames::productDimensions = productDimensions;
 }
 
-string PhysicalGame::toString() {
+string PhysicalGames::toString() {
     ostringstream output;
     output << fixed << setprecision(2);
     output << "Game Name: " << getName()
