@@ -29,3 +29,8 @@ string StreamingGames::toString() {
 
     return output.str();
 }
+
+string StreamingGames::replaceGame()
+{
+    return  "this product will have a replacement.";
+}

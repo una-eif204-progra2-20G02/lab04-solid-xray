@@ -11,7 +11,7 @@
 
 using namespace std;
 
-class DigitalGames : Game {
+class DigitalGames : public Game {
 public:
     DigitalGames();
 
@@ -22,6 +22,11 @@ public:
     void setFilePath(const string &filePath);
 
     string toString();
+
+    string replaceGame();
+
+private:
+    double applyDiscount() override;
 
 private:
     string filePath;

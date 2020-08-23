@@ -31,6 +31,8 @@ public:
 
     string toString();
 private:
+    virtual double applyDiscount();
+private:
     string name;
     double price;
     double tax;

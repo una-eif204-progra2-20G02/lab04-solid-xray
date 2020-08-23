@@ -29,4 +29,11 @@ string DigitalGames::toString() {
     return output.str();
 }
 
+double  DigitalGames::applyDiscount()
+{
+    return getPrice() * 0.15;
+}
 
+string DigitalGames::replaceGame() {
+    return  "this product will have a replacement.";
+}

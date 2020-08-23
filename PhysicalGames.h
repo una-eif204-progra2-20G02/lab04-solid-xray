@@ -26,6 +26,8 @@ public:
     void setProductDimensions(string productDimensions);
 
     string toString();
+
+    string sendGame();
 private:
     double itemWeight;
     string productDimensions;

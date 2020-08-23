@@ -23,6 +23,8 @@ public:
 
     string toString();
 
+    string replaceGame();
+
 private:
     string linkGame;
 };

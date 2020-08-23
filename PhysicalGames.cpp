@@ -39,3 +39,7 @@ string PhysicalGames::toString() {
 
     return output.str();
 }
+
+string PhysicalGames::sendGame() {
+    return "this product will have a shipment.";
+}

@@ -59,3 +59,8 @@ string Game::toString() {
 
     return output.str();
 }
+
+double Game::applyDiscount()
+{
+    return getPrice();
+}
