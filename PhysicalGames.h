@@ -8,10 +8,11 @@
 #endif //LAB04_SOLID_PHYSICALGAMES_H
 #include <sstream>
 #include "Game.h"
+#include "ISendGame.h"
 
 using namespace std;
 
-class PhysicalGames : public Game {
+class PhysicalGames : public Game, ISendGame {
 public:
     PhysicalGames();
 
@@ -27,7 +28,7 @@ public:
 
     string toString();
 
-    string sendGame();
+    string sendGame() override;
 private:
     double itemWeight;
     string productDimensions;

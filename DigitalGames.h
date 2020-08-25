@@ -8,10 +8,11 @@
 #endif //LAB04_SOLID_DIGITALGAMES_H
 #include <sstream>
 #include "Game.h"
+#include "IReplaceGame.h"
 
 using namespace std;
 
-class DigitalGames : public Game {
+class DigitalGames : public Game, IReplaceGame {
 public:
     DigitalGames();
 
@@ -23,7 +24,7 @@ public:
 
     string toString();
 
-    string replaceGame();
+    string replaceGame() override;
 
 private:
     double applyDiscount() override;

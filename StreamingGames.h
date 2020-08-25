@@ -8,10 +8,11 @@
 #endif //LAB04_SOLID_STREAMINGGAMES_H
 #include <sstream>
 #include "Game.h"
+#include "IReplaceGame.h"
 
 using namespace std;
 
-class StreamingGames : Game {
+class StreamingGames : Game, IReplaceGame {
 public:
     StreamingGames();
 
@@ -23,7 +24,7 @@ public:
 
     string toString();
 
-    string replaceGame();
+    string replaceGame() override;
 
 private:
     string linkGame;
