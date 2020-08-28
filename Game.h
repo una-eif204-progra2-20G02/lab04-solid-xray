@@ -27,8 +27,6 @@ public:
 
     double calculatePriceWithTax();
 
-    void save(string &filename);
-
     string toString();
 private:
     virtual double applyDiscount();

@@ -3,7 +3,6 @@
 //
 
 #include <iomanip>
-#include <fstream>
 #include "Game.h"
 
 Game::Game() {}
@@ -38,17 +37,6 @@ double Game::calculatePriceWithTax() {
     return getPrice() + (getPrice() * getTax());
 }
 
-/**
- * Save the information into a text file
- * @param filename the name of the text file
- */
-void Game::save(string &filename) {
-    ofstream ofs (filename,ofstream::out);
-
-    ofs << toString();
-
-    ofs.close();
-}
 
 string Game::toString() {
     ostringstream output;
